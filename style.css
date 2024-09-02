@@ -1,0 +1,544 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #5E17EB;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #6e2eee;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 230px;
+}
+
+header a{
+    color: #5C5C5C;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/* ESTILO TOPO DO SITE */
+
+section .topo-do-site {
+    padding: 40px 4%;
+}
+
+section .topo-do-site, .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #5E17EB;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    width: 400px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;   
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+.especialidades h2 {
+    padding: 40px 4%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 42px;
+}
+
+.especialidades h2 span{
+    margin-left: 10px;
+    color: #5E17EB;
+}
+
+
+.especialidades-box i{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.especialidades-box i img {
+    width: 100px;
+}
+
+.especialidades p {
+    color: #fff;
+}
+
+.especialidades-box span {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+    }
+
+.especialidades-box {
+    transition: 0.5s;
+}
+.especialidades-box:hover {
+    display: inline-block;
+    transform: scale(1.1);
+}
+
+/* Estilo do sobre */
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section .sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #5E17EB;
+    display: block;
+    line-height: 40px;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #5E17EB;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 1s;
+}
+
+
+.btn-social button:hover {
+    box-shadow: 0px 0px 8px #6e2eee;
+    transform: scale(1.05);
+}
+
+/* ESTILO PORTIFOLIO */
+
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.portifolio .flex {
+    justify-content: space-around;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 50% 0%;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.portifolio h1 {
+    padding: 40px 4%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 42px;
+}
+
+.portifolio h1 span {
+    color: #5E17EB;
+    margin-left: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000bd;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+    flex-direction: column;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.btn-projeto {
+    display: inline-flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-projeto button {
+    border: none;
+    background-color: #5E17EB;
+    padding: 10px 4%;
+    border-radius: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s;
+    height: 45px;
+    width: 90px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn-projeto button:hover {
+    scale: 1.1;
+    box-shadow: 0px 0px 10px #6e2eee;
+}
+
+/* Contatos */
+
+.contatos h1 {
+    padding: 40px 4%;
+    color: #fff;
+    font-size: 40px;
+}
+
+.contatos h1 span {
+    color: #5E17EB;
+}
+
+.info-contatos {
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 4%;
+}
+
+.img-contatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 4px 4%;
+    background-color: #5E17EB;
+    height: 50px;
+    width: 50px;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.contato-email img {
+    height: 30px;
+    width: 30px;
+}
+
+.contato-tel img {
+    height: 30px;
+    width: 30px;
+}
+
+.contato-email {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 4px 4%;
+}
+
+.contato-email a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contato-tel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 4px 4%;
+}
+
+.contatos, .contato-emial, .contato-tel span {
+    color: white;
+    font-size: 25px;
+    
+}
+
+.contato-whats a button {
+    border: none;
+    background-color: black;
+    height: 100px;
+    width: 300px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.contato-whats a button:hover {
+    scale: 1.1;
+}
+
+.contato-whats a button img {
+    height: 100px;
+    width: 300px;
+}
+
+.contato-whats {
+    display: flex;
+    padding: 20px 4%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-whats a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contatos {
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+/* footer */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+
+}
+
+.line-footer{
+    padding: 20px 0px;
+}
+
+.borda {
+    border-top: 2px solid #5E17EB;
+}
+
+
+.logo-footer img {
+    width: 230px;
+}
+
+.img-fundo {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-fundo a {
+ color: #fff;
+ text-decoration: none;
+}
+
+.img-fundo img {
+    background-color: #5E17EB;
+    width: 35px;
+    height: 30px;
+}
+
+
+@media screen and (max-width: 1020px){
+    /* CLASSE GERAL */
+    .flex{
+        flex-direction: column;
+    }
+
+    /* CABEÇALHO */
+    
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    .topo-do-site .img-topo-site img {
+        width: 300px;  
+    }
+
+    section .topo-do-site {
+        padding: 20px 8%;
+    }
+    
+    .topo-do-site h1 {
+        font-size: 30px;
+        padding: 10px 8%;
+    }
+
+    .topo-do-site p {
+        padding: 10px 8%;
+    }
+
+    /* MINHAS ESPECIALIDADES */
+    
+    .especialidades h2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 8%;
+        font-size: 30px;
+    }
+
+    .especialidades p {
+        padding: 10px 8%;
+    }
+    
+    .especialidades-box i img {
+        width: 80px;
+    }
+
+    .flex .especialidades-box {
+        display: none;
+    }
+
+    .especialidades-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .especialidades-box span {
+        display: none;
+    }
+
+    /* CONTATOS */
+
+    .info-contatos {
+        display:flex;
+        flex-direction: column;
+        padding: 10px 4%;
+    }
+
+    .contato-email {
+       font-size: 15px;
+    }
+
+    .contato-tel span {
+        font-size: 15px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 0px;
+    }
+
+    .logo-footer img {
+        display: none;
+    }
+
+
+
+    .img-fundo a {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-fundo img {
+        margin-left: 30px;
+    }
+
+}
